@@ -1,0 +1,102 @@
+{
+  "model_run": "20260927_105305_848265",
+  "development_specimens": 374,
+  "test_specimens": 76,
+  "test_publications": [
+    "P05",
+    "P06",
+    "P14",
+    "P15"
+  ],
+  "feature_columns": [
+    "D",
+    "ts",
+    "D/ts",
+    "H",
+    "H/D",
+    "Tmax",
+    "th",
+    "TEI",
+    "FY",
+    "FC",
+    "CM_NC",
+    "CM_UN",
+    "CM_WC"
+  ],
+  "cooling_methods": [
+    "NC",
+    "UN",
+    "WC"
+  ],
+  "development_ranges": {
+    "D": {
+      "min": 72.6,
+      "max": 377.0
+    },
+    "ts": {
+      "min": 1.0,
+      "max": 10.0
+    },
+    "D/ts": {
+      "min": 16.6666666666667,
+      "max": 120.0
+    },
+    "H": {
+      "min": 188.0,
+      "max": 2650.0
+    },
+    "H/D": {
+      "min": 2.0,
+      "max": 17.5438596491228
+    },
+    "Tmax": {
+      "min": 20.0,
+      "max": 1110.0
+    },
+    "th": {
+      "min": 0.0,
+      "max": 800.0
+    },
+    "TEI": {
+      "min": 0.0,
+      "max": 322000.0
+    },
+    "FY": {
+      "min": 238.0,
+      "max": 924.0
+    },
+    "FC": {
+      "min": 13.4,
+      "max": 144.4
+    }
+  },
+  "defaults": {
+    "D": 125.0,
+    "ts": 4.0,
+    "H": 600.0,
+    "Tmax": 600.0,
+    "th": 120.0,
+    "TEI": 34000.0,
+    "FY": 380.0,
+    "FC": 36.7
+  },
+  "default_cooling_method": "NC",
+  "test_metrics": [
+    {
+      "Target": "NUT",
+      "Test specimens": 76,
+      "R²": 0.8765,
+      "RMSE": 690.7554,
+      "MAE": 467.9635,
+      "MAPE (%)": 16.86
+    },
+    {
+      "Target": "NUT/NUO",
+      "Test specimens": 76,
+      "R²": 0.7157,
+      "RMSE": 0.0916,
+      "MAE": 0.071,
+      "MAPE (%)": 9.59
+    }
+  ]
+}
